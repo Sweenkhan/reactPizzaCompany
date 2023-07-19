@@ -16,7 +16,7 @@ const localHourIST = (localHourUTC + indianTimeOffset) % 24;
      
       <p> We're Happy to welcome you between {openHour}:00 and {closeHour}:00 </p>
        
-      <div className={(localHourIST > openHour) ? "open" : "close" }>
+      <div className={(localHourIST > openHour) ? "order" : "close" }>
       <button className='btn'>Order now</button>
       </div>
     </div>

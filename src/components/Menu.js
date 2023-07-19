@@ -13,9 +13,9 @@ function Menu() {
        <div className='pizzas'>
         {
           pizzaData.map((pizza, index) => {
-             return <div className='pizza' key={index}>
+             return <div className={(pizza.soldOut) ? "pizza sold-out" : "pizza" } key={index}>
       
-                <img alt='pizaImg' src={pizza.photoName} ></img>
+                <img alt='pizaImg' src={pizza.photoName}></img>
              
               <div className='pizza div'>
                 <h3>{pizza.name}</h3>
